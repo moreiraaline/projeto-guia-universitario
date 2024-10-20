@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    color: #ff8800;
+    margin-bottom: 20px;
+}
+
+p.lead {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+    .feature h3 {
+        color: #ff8800;
+        margin-bottom: 10px;
+    }
+
+    .feature p {
+        color: #666;
+    }
+
+a.btn-start {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+    a.btn-start:hover {
+        background-color: #e07700;
+    }
+
+.search-form {
+    margin: 20px 0; /* Margem acima e abaixo do formulário */
+}
+
+    .search-form input {
+        padding: 10px;
+        width: 200px; /* Largura do campo de busca */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .search-form button {
+        padding: 10px;
+        background-color: #ff8800; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    }
+
+        .search-form button:hover {
+            background-color: #e07700; /* Cor do botão ao passar o mouse */
+        }
+

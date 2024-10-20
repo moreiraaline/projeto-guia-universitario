@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+    Layout = "_Layout"; // Nome do arquivo de layout compartilhado
+}
+
+<div class="container">
+    <!-- Container para centralizar o formulário -->
+    <div class="login-container">
+        <div class="logo">
+            <img src="~/imagens/logo.jpeg" alt="Logo Guia Universidades">
+        </div>
+        <form class="login-form" action="sua-url-de-login" method="POST">
+            <input type="email" name="email" placeholder="E-MAIL" required>
+            <input type="password" name="senha" placeholder="SENHA" required>
+            <button type="submit">ENTRAR</button>
+            <a href="#" class="esqueci-senha">Esqueci a Senha</a>
+            <div class="cadastre-se">
+                <span>ou</span>
+                <a href="@Url.Action("Cadastro", "Home")" class="cadastre-se">CADASTRE-SE</a>
+            </div>
+        </form>
+    </div>
+</div>

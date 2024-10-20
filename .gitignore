@@ -1,0 +1,18 @@
+# Ignorar diretórios do Visual Studio
+.vs/
+bin/
+obj/
+
+# Ignorar arquivos de configuração do usuário
+*.user
+*.suo
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de cache do ASP.NET
+*.db
+*.pdb
+
+# Ignorar arquivos de backup
+*~

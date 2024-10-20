@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout"; // Referência ao layout compartilhado
+}
+
+<div class="container home-container">
+    <div class="text-center">
+        <h1 class="display-4">Bem-vindo ao Guia do Estudante</h1>
+        <p class="lead">Seu guia universitário para uma vida acadêmica mais organizada e produtiva.</p>
+
+        <!-- Campo de Busca -->
+        <form class="search-form" action="@Url.Action("Search", "Home")" method="get">
+            <input type="text" name="query" placeholder="Buscar..." required />
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Calendário Acadêmico</h3>
+                <p>Organize suas aulas e eventos com facilidade.</p>
+            </div>
+            <div class="feature">
+                <h3>Notas e Avaliações</h3>
+                <p>Acompanhe suas notas e saiba como está seu desempenho.</p>
+            </div>
+            <div class="feature">
+                <h3>Comunidade Estudantil</h3>
+                <p>Conecte-se com colegas e participe de grupos de estudo.</p>
+            </div>
+        </div>
+
+        <a class="btn-start" href="/register">Começar Agora</a>
+    </div>
+</div>
