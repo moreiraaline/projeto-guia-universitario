@@ -1,6 +1,6 @@
 html, body {
-    height: 100%; /* Garantir que o body ocupe 100% da altura */
-    margin: 0; /* Remover margens padrão */
+    height: 100%; 
+    margin: 0; 
 }
 
 body {
@@ -10,9 +10,9 @@ body {
 
 .container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa 100% da altura da viewport */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .login-container {
@@ -21,57 +21,57 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px; /* Largura do formulário */
+    width: 300px;
 }
 
 .logo img {
-    width: 160px; /* Aumentar a imagem do logo */
+    width: 160px;
     margin-bottom: 20px;
 }
 
 .login-form {
-    text-align: center; /* Centraliza o texto dentro do formulário */
+    text-align: center; 
 }
 
     .login-form input {
-        width: 100%; /* Campo ocupa 100% da largura */
-        padding: 10px; /* Padding para os campos */
-        margin: 10px 0; /* Margem entre os campos */
-        border: 1px solid #ccc; /* Borda dos campos */
-        border-radius: 5px; /* Bordas arredondadas */
+        width: 100%; 
+        padding: 10px;
+        margin: 10px 0; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
     }
 
     .login-form button {
-        width: 100%; /* Botão ocupa 100% da largura */
-        padding: 10px; /* Padding do botão */
-        background-color: #ff8800; /* Cor de fundo do botão */
-        color: white; /* Cor do texto do botão */
-        border: none; /* Sem borda */
-        border-radius: 5px; /* Bordas arredondadas do botão */
+        width: 100%; 
+        padding: 10px; 
+        background-color: #ff8800; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
     }
 
         .login-form button:hover {
-            background-color: #e07700; /* Cor do botão ao passar o mouse */
+            background-color: #e07700; 
         }
 
 .esqueci-senha {
-    display: block; /* Exibir como bloco */
-    margin: 10px 0; /* Margem acima e abaixo */
-    font-size: 12px; /* Tamanho da fonte */
-    color: #666; /* Cor do texto */
-    text-decoration: none; /* Sem sublinhado */
+    display: block; 
+    margin: 10px 0; 
+    font-size: 12px; 
+    color: #666; 
+    text-decoration: none; 
 }
 
 .cadastre-se {
-    margin-top: 20px; /* Margem acima */
-    position: relative; /* Para permitir o uso de z-index */
-    z-index: 10; /* Garante que este elemento esteja acima de outros */
+    margin-top: 20px; 
+    position: relative; 
+    z-index: 10;
 }
 
     .cadastre-se a {
-        color: #ff8800; /* Cor do link */
-        text-decoration: underline; /* Adiciona sublinhado para parecer um link */
-        font-weight: bold; /* Negrito */
-        cursor: pointer; /* Muda o cursor ao passar sobre o link */
-        pointer-events: auto; /* Certifica-se de que o link seja clicável */
+        color: #ff8800; 
+        text-decoration: underline;
+        font-weight: bold; 
+        cursor: pointer; 
+        pointer-events: auto; 
     }

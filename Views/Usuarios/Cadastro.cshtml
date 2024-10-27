@@ -9,7 +9,6 @@
             <img src="~/imagens/logofinal.png" alt="Logo Guia Universidades">
         </div>
 
-        <!-- Snackbar de Feedback -->
         <div id="feedbackMessage" class="feedback-message"></div>
 
         <form class="login-form" action="@Url.Action("Cadastrar", "Usuarios")" method="POST">
@@ -34,47 +33,46 @@
 
         if (errorMessage) {
             feedbackMessage.textContent = "Erro no cadastro"
-            feedbackMessage.className = "feedback-message error show"; // Adiciona a classe de erro
+            feedbackMessage.className = "feedback-message error show"; 
 
             // Esconde a mensagem após 3 segundos
             setTimeout(function () {
-                feedbackMessage.className = feedbackMessage.className.replace("show", ""); // Remove a classe
-                feedbackMessage.style.visibility = "hidden"; // Esconde a mensagem
-            }, 3000); // Tempo em milissegundos
+                feedbackMessage.className = feedbackMessage.className.replace("show", ""); 
+                feedbackMessage.style.visibility = "hidden";
+            }, 3000);
         }
     });
 </script>
 
 
 <style>
-/* Estilo da Snackbar */
 .feedback-message {
     position: fixed;
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da direita */
-    min-width: 250px; /* Largura mínima */
-    padding: 16px; /* Espaçamento interno */
-    background-color: #f8d7da; /* Cor de fundo vermelho claro */
-    color: #721c24; /* Cor do texto vermelho escuro */
-    border-radius: 5px; /* Cantos arredondados */
-    text-align: center; /* Centraliza o texto */
+    top: 20px; 
+    right: 20px; 
+    min-width: 250px; 
+    padding: 16px; 
+    background-color: #f8d7da; 
+    color: #721c24; 
+    border-radius: 5px; 
+    text-align: center; 
     transition: visibility 0s, opacity 0.5s linear;
-    visibility: hidden; /* Inicialmente escondido */
-    opacity: 0; /* Opacidade inicial */
+    visibility: hidden; 
+    opacity: 0; 
 }
 
 .feedback-message.success {
-    background-color: #d4edda; /* Verde claro para sucesso */
-    color: #155724; /* Texto verde escuro */
+    background-color: #d4edda; 
+    color: #155724; 
 }
 
 .feedback-message.error {
-    background-color: #f8d7da; /* Vermelho claro para erro */
-    color: #721c24; /* Texto vermelho escuro */
+    background-color: #f8d7da; 
+    color: #721c24; 
 }
 
 .feedback-message.show {
-    visibility: visible; /* Torna visível */
-    opacity: 1; /* Torna opaco */
+    visibility: visible; 
+    opacity: 1; 
 }
 </style>

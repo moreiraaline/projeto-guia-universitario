@@ -21,6 +21,11 @@ html, body {
     width: 800px;
 }
 
+.custom-brand {
+    color: orange; 
+    font-size: 1.25rem;
+}
+
 h1.display-4 {
     font-size: 2.5rem;
     color: #ff8800;
@@ -69,26 +74,26 @@ a.btn-start {
     }
 
 .search-form {
-    margin: 20px 0; /* Margem acima e abaixo do formul�rio */
+    margin: 20px 0; 
 }
 
     .search-form input {
         padding: 10px;
-        width: 200px; /* Largura do campo de busca */
+        width: 200px; 
         border: 1px solid #ccc;
         border-radius: 5px;
     }
 
     .search-form button {
         padding: 10px;
-        background-color: #ff8800; /* Cor de fundo do bot�o */
-        color: white; /* Cor do texto */
+        background-color: #ff8800; 
+        color: white; 
         border: none;
         border-radius: 5px;
-        cursor: pointer; /* Muda o cursor ao passar sobre o bot�o */
+        cursor: pointer; 
     }
 
         .search-form button:hover {
-            background-color: #e07700; /* Cor do bot�o ao passar o mouse */
+            background-color: #e07700; 
         }
 

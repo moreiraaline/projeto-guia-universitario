@@ -51,8 +51,6 @@ namespace guiaUnivesitario.Controllers
         }
 
         // POST: Universidades/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Nome,Cidade,Estado,Cep,Curso,avaliacaoMEC,avaliacaoAluno,avaliacaoProfessor,Comentario,Preco,Site")] Universidade universidade)
@@ -82,9 +80,7 @@ namespace guiaUnivesitario.Controllers
             return View(universidade);
         }
 
-        // POST: Universidades/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,Cidade,Estado,Cep,Curso,avaliacaoMEC,avaliacaoAluno,avaliacaoProfessor,Comentario,Preco,Site")] Universidade universidade)

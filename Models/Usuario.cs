@@ -7,9 +7,9 @@ namespace guiaUnivesitario.Models
         public int Id { get; set; } // Chave primária
         public string Nome { get; set; }
         public string Email { get; set; }
-        public string Senha { get; set; } // Armazenar senhas de forma segura é importante, considere usar hashing.
+        public string Senha { get; set; } 
 
-        [NotMapped] // Para não mapear esta propriedade na base de dados
+        [NotMapped] 
         public string ConfirmarSenha { get; set; }
     }
 }

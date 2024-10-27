@@ -15,7 +15,7 @@ namespace guiaUnivesitario.Controllers
 
         public IActionResult Index()
         {
-            return View("Homepage"); // Modifique aqui
+            return View("Homepage"); 
         }
 
         public IActionResult Privacy()
