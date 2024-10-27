@@ -1,13 +1,80 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Cadastro";
+    Layout = "_Layout";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @RenderBody()
+<div class="container">
+    <div class="login-container">
+        <div class="logo">
+            <img src="~/imagens/logofinal.png" alt="Logo Guia Universidades">
+        </div>
+
+        <!-- Snackbar de Feedback -->
+        <div id="feedbackMessage" class="feedback-message"></div>
+
+        <form class="login-form" action="@Url.Action("Cadastrar", "Usuarios")" method="POST">
+            <input type="text" name="nome" placeholder="NOME" required>
+            <input type="email" name="email" placeholder="E-MAIL" required>
+            <input type="password" name="senha" placeholder="SENHA" required>
+            <input type="password" name="confirmarSenha" placeholder="CONFIRMAR SENHA" required>
+            <button type="submit">CADASTRAR</button>
+            <div class="cadastre-se">
+                <span>Já possui uma conta? <a href="@Url.Action("Login", "Usuarios")">Faça login</a></span>
+            </div>
+        </form>
     </div>
-</body>
-</html>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const feedbackMessage = document.getElementById("feedbackMessage");
+
+        // Mostrar a mensagem de erro
+        const errorMessage = '@TempData["Error"]';
+
+        if (errorMessage) {
+            feedbackMessage.textContent = "Erro no cadastro"
+            feedbackMessage.className = "feedback-message error show"; // Adiciona a classe de erro
+
+            // Esconde a mensagem após 3 segundos
+            setTimeout(function () {
+                feedbackMessage.className = feedbackMessage.className.replace("show", ""); // Remove a classe
+                feedbackMessage.style.visibility = "hidden"; // Esconde a mensagem
+            }, 3000); // Tempo em milissegundos
+        }
+    });
+</script>
+
+
+<style>
+/* Estilo da Snackbar */
+.feedback-message {
+    position: fixed;
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    min-width: 250px; /* Largura mínima */
+    padding: 16px; /* Espaçamento interno */
+    background-color: #f8d7da; /* Cor de fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+    border-radius: 5px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden; /* Inicialmente escondido */
+    opacity: 0; /* Opacidade inicial */
+}
+
+.feedback-message.success {
+    background-color: #d4edda; /* Verde claro para sucesso */
+    color: #155724; /* Texto verde escuro */
+}
+
+.feedback-message.error {
+    background-color: #f8d7da; /* Vermelho claro para erro */
+    color: #721c24; /* Texto vermelho escuro */
+}
+
+.feedback-message.show {
+    visibility: visible; /* Torna visível */
+    opacity: 1; /* Torna opaco */
+}
+</style>
