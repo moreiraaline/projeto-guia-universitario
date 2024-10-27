@@ -18,7 +18,7 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 600px;
+    width: 800px;
 }
 
 h1.display-4 {
@@ -69,7 +69,7 @@ a.btn-start {
     }
 
 .search-form {
-    margin: 20px 0; /* Margem acima e abaixo do formulário */
+    margin: 20px 0; /* Margem acima e abaixo do formulï¿½rio */
 }
 
     .search-form input {
@@ -81,14 +81,14 @@ a.btn-start {
 
     .search-form button {
         padding: 10px;
-        background-color: #ff8800; /* Cor de fundo do botão */
+        background-color: #ff8800; /* Cor de fundo do botï¿½o */
         color: white; /* Cor do texto */
         border: none;
         border-radius: 5px;
-        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        cursor: pointer; /* Muda o cursor ao passar sobre o botï¿½o */
     }
 
         .search-form button:hover {
-            background-color: #e07700; /* Cor do botão ao passar o mouse */
+            background-color: #e07700; /* Cor do botï¿½o ao passar o mouse */
         }
 

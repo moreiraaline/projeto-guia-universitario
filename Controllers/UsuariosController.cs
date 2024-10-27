@@ -6,7 +6,7 @@ namespace guiaUnivesitario.Controllers
     {
         public IActionResult Login()
         {
-            return View(); // Certifique-se de que exista uma View chamada Login.cshtml
+            return View(); 
         }
     }
 }
